@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3380030211733664542
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7031323036680203605}
+  - component: {fileID: 3665997992580356417}
+  - component: {fileID: 1988294721}
+  - component: {fileID: 7432314796347962999}
+  m_Layer: 0
+  m_Name: DungeonFloor2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7031323036680203605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380030211733664542}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3665997992580356417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380030211733664542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef673bf0325241f469f4ce1f78263d65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rooms:
+  - {fileID: 3356335893789572892, guid: d3bb95f4af04df347944f07da2ddc0e3, type: 3}
+  - {fileID: 3356335893789572892, guid: 4077dc28ac62be54980ff50101eb8ac5, type: 3}
+  - {fileID: 3356335893789572892, guid: d0b32c4b39ff8274a8e0cf7297bc52e2, type: 3}
+  - {fileID: 3356335893789572892, guid: 23cd7268a1edf6b4fa695e7b0e5e5899, type: 3}
+  - {fileID: 3356335893789572892, guid: 81250b293fccf79459464fcd8eb63fb9, type: 3}
+  - {fileID: 3356335893789572892, guid: 810508735d684564c82fd9bcb996e252, type: 3}
+  - {fileID: 3356335893789572892, guid: 792c0878a6ec94a4ea3f650cf7d936cf, type: 3}
+  - {fileID: 3356335893789572892, guid: 1e0f7dd2eda49a74b8b85620caaccd10, type: 3}
+  - {fileID: 3356335893789572892, guid: d26e0d827e1d3524b92c42e728b87d99, type: 3}
+  - {fileID: 3356335893789572892, guid: 746be9e442c18c840abb3e80a6aa10da, type: 3}
+  startingRooms:
+  - {fileID: 2104362380370288201, guid: f89f4c6343623c944af572ffe8375d5a, type: 3}
+  corridors:
+  - {fileID: 4329442344824191842, guid: 81f74233caaf8a046bf2e25543ba815c, type: 3}
+  - {fileID: 2037518358021024364, guid: 95d1d20818d69314394cfcbc5ccf7f13, type: 3}
+  - {fileID: 8223480056178518548, guid: d5ca9619e126981448f851f2cc35f005, type: 3}
+  - {fileID: 2037518358021024364, guid: cede8788a111eb44db6d2230c396a1fd, type: 3}
+  - {fileID: 165962, guid: 7edc51e3016e7f044bc3226c6bd1b72d, type: 3}
+  - {fileID: 152896, guid: 8d03bfb8c4a5b6d49b71ce494232864c, type: 3}
+  - {fileID: 2037518358021024364, guid: 5fd1020e1d0dfe3439a54efa84f8e1fb, type: 3}
+  - {fileID: 8223480056178518548, guid: bee089319e97ea646952ab5287dbb2cb, type: 3}
+  - {fileID: 165962, guid: 6e2f3a28602925845b2fa5cc117e80bf, type: 3}
+  mobs:
+  - {fileID: 2161097644017189955, guid: 09efc08a66079d1489a0aee5d107d882, type: 3}
+  - {fileID: 5839478387944890482, guid: 841d106db852c1c4a9e0762b79a8af85, type: 3}
+  - {fileID: 8931416526484982432, guid: 2a972a4ce5036c2459c4bea45ef9921d, type: 3}
+  gunTypes: 
+  armory: {fileID: 2104362380370288201, guid: e72d723d5b8365c4f9af88c082f19c5b, type: 3}
+  bossRoom: {fileID: 0}
+  door: {fileID: 198422, guid: 2d927feb0fbf1a7429c095369d395de7, type: 3}
+  exitDoor: {fileID: 125588, guid: ea798cfb4939d4441b95d1bd39d0767f, type: 3}
+  wall: {fileID: 127348, guid: e37a5396a520a8e4e8e48c74975b6a61, type: 3}
+  healthpack: {fileID: 8996806439944670080, guid: eb2831416169c314c934c4d485cee656,
+    type: 3}
+  floorScore: 0
+  goalNumberOfRooms: 20
+  floorNumber: 2
+  mobBias: 00000000320000005a00000064000000
+  gunTypeBias: 00000000230000004600000064000000
+  gunRarityBias: 00000000320000005500000064000000
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+--- !u!114 &1988294721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380030211733664542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!114 &7432314796347962999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3380030211733664542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: -334000983
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.33333334
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 0}

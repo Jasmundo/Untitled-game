@@ -1,2 +1,2 @@
 # Untitled-game
-FPS/rougelike unity project
+Unfinished FPS/rougelike unity project with procedurally generated maps

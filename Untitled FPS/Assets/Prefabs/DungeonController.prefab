@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7246465919545925625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7246465919545925623}
+  - component: {fileID: 7246465919545925624}
+  m_Layer: 0
+  m_Name: DungeonController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7246465919545925623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7246465919545925625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.646285, y: -15.859131, z: 17.420582}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7246465919545925624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7246465919545925625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5efdac04dd952a24e8456d8124f9ddf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dungeonFloors:
+  - {fileID: 3380030211733664542, guid: 9b6e5f5dcafe53c4ca01d449d5c5028e, type: 3}
+  - {fileID: 3380030211733664542, guid: 44ae3b800077ce9448e93cdd2fae6b7d, type: 3}
+  - {fileID: 3380030211733664542, guid: 96de1f943263a234a86071689bb4b63f, type: 3}
+  - {fileID: 3380030211733664542, guid: b4dcab568b1658447ab573d18d73a5d5, type: 3}
+  - {fileID: 3380030211733664542, guid: ff90c0b9125541c4d9b5ab03798ce4b3, type: 3}
+  initialDungeonFloors: []
+  decor0:
+  - {fileID: 951124534597324788, guid: 30b23b20c20fc4440b9415e7d4fc7992, type: 3}
+  - {fileID: 4992897228064269746, guid: 67f53f7c5ed545d49b74e13ad49fa0ed, type: 3}
+  decor1:
+  - {fileID: 110812155842911147, guid: 4d6239945baecbc408826069d03ede80, type: 3}
+  - {fileID: 7518569655318054968, guid: 2aa20d315154a874ea71e3a903940ccf, type: 3}
+  - {fileID: 3679922972704678994, guid: ec1ebe20b8347e34bb4ef1cf5e031cc3, type: 3}
+  decor2:
+  - {fileID: 5710964430554365267, guid: 36e56d9f80000b64daa14de407e6133f, type: 3}
+  - {fileID: 8402107412285434418, guid: 5b06f9e80afe71f41bd6db354e46d568, type: 3}
+  decor3:
+  - {fileID: 1904677244825194058, guid: 3611061b67c9d2249aa332514664fb02, type: 3}
+  - {fileID: 4246696409287763555, guid: ea3bb6c32a267c4458f1fa611fe8c0c4, type: 3}
+  decor4:
+  - {fileID: 4913175956834222094, guid: 52e21e33c4782294893071455c02a82d, type: 3}
+  - {fileID: 1578361006773963521, guid: 120d048a8b2c6fd409a599572052c17d, type: 3}
+  - {fileID: 8604799448064919500, guid: e34e8c273880daa4db084af6d682a4b3, type: 3}
+  currentDungeonFloor: {fileID: 0}
+  loadingScreen: {fileID: 0}
+  currentFloorNr: 0
+  floorLocations:
+  - {x: 0, y: 0, z: 0}
+  - {x: 300, y: 0, z: 0}
+  - {x: 0, y: 0, z: 300}
+  - {x: -300, y: 0, z: 0}
+  - {x: 0, y: 0, z: -300}
+  - {x: 300, y: 0, z: -300}
+  - {x: 300, y: 0, z: 300}
+  - {x: -300, y: 0, z: 300}
+  - {x: -300, y: 0, z: -300}
