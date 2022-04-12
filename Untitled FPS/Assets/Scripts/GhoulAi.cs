@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Controls animations and what happens when Ghoul attacks the player.
+/// </summary>
 public class GhoulAi : EnemyAi
 {
     public override void Idling()

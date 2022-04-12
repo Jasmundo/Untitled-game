@@ -1,0 +1,104 @@
+\hypertarget{class_enemy_ai}{}\doxysection{Enemy\+Ai Class Reference}
+\label{class_enemy_ai}\index{EnemyAi@{EnemyAi}}
+
+
+Base class for controlling enemies.  
+
+
+Inheritance diagram for Enemy\+Ai\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_enemy_ai}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_aa6ea70a103ba0810ebd632b4065b275f}\label{class_enemy_ai_aa6ea70a103ba0810ebd632b4065b275f}} 
+virtual void {\bfseries Idling} ()
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a5634f9f256f3626aa7da447ab564a542}\label{class_enemy_ai_a5634f9f256f3626aa7da447ab564a542}} 
+virtual void {\bfseries Chase\+Player} ()
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a5c889f3380ac489b2beb0fff84fc5913}\label{class_enemy_ai_a5c889f3380ac489b2beb0fff84fc5913}} 
+virtual void {\bfseries Attack\+Player} ()
+\item 
+\mbox{\Hypertarget{class_enemy_ai_aff902fdaeed67905d6b9846070426b6b}\label{class_enemy_ai_aff902fdaeed67905d6b9846070426b6b}} 
+void {\bfseries Reset\+Attack} ()
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a16d2cffd3c7b453e18fd54b98219f0d4}\label{class_enemy_ai_a16d2cffd3c7b453e18fd54b98219f0d4}} 
+void {\bfseries Take\+Damage} (int damage)
+\item 
+\mbox{\Hypertarget{class_enemy_ai_ab33f8c9d9913b7e97a15ecb084202a6f}\label{class_enemy_ai_ab33f8c9d9913b7e97a15ecb084202a6f}} 
+void {\bfseries Get\+Healed} (int heal)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_aab0a84c41888a3bf25b4e755b68b241d}\label{class_enemy_ai_aab0a84c41888a3bf25b4e755b68b241d}} 
+Nav\+Mesh\+Agent {\bfseries agent}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a91b9979949caced20ed28f7cece4d0e0}\label{class_enemy_ai_a91b9979949caced20ed28f7cece4d0e0}} 
+Transform {\bfseries player}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a0c7ab04ca9bb84162025337c4106003d}\label{class_enemy_ai_a0c7ab04ca9bb84162025337c4106003d}} 
+Layer\+Mask {\bfseries what\+Is\+Ground}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_adf7c24ff8004e99780a60a79b1a2af00}\label{class_enemy_ai_adf7c24ff8004e99780a60a79b1a2af00}} 
+Layer\+Mask {\bfseries what\+Is\+Player}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_ae3da44ae182bf946d5baca001f1a7ff3}\label{class_enemy_ai_ae3da44ae182bf946d5baca001f1a7ff3}} 
+Layer\+Mask {\bfseries ignore\+Raycast}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a5bb1d58e7db1ee622970ec4c5b642369}\label{class_enemy_ai_a5bb1d58e7db1ee622970ec4c5b642369}} 
+float {\bfseries max\+Health}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_afae57291b13b174c24ee46688bc3904b}\label{class_enemy_ai_afae57291b13b174c24ee46688bc3904b}} 
+float {\bfseries health}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a475d89df29207711fef65e10f1ebf3da}\label{class_enemy_ai_a475d89df29207711fef65e10f1ebf3da}} 
+int {\bfseries attack\+Damage}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_aac97d04e83279561e7dba4f4df619945}\label{class_enemy_ai_aac97d04e83279561e7dba4f4df619945}} 
+bool {\bfseries boss}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a750f9b46c6f799fe882f1cb631fecb0d}\label{class_enemy_ai_a750f9b46c6f799fe882f1cb631fecb0d}} 
+float {\bfseries time\+Between\+Attacks}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_ac94214284b3eaada90c99f1bc165758d}\label{class_enemy_ai_ac94214284b3eaada90c99f1bc165758d}} 
+float {\bfseries sight\+Range}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a78288d4647dc918b0381703797be4a8d}\label{class_enemy_ai_a78288d4647dc918b0381703797be4a8d}} 
+float {\bfseries attack\+Range}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a4bc7d6644afb515638fc640cabdb3f22}\label{class_enemy_ai_a4bc7d6644afb515638fc640cabdb3f22}} 
+Rigidbody {\bfseries Rigidbody}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a7bd33019eb7db164550b6a4b90903be3}\label{class_enemy_ai_a7bd33019eb7db164550b6a4b90903be3}} 
+Animator {\bfseries animator}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a7f3a92d21e4bcb3bb3a0107087b73e7c}\label{class_enemy_ai_a7f3a92d21e4bcb3bb3a0107087b73e7c}} 
+bool {\bfseries already\+Attacked}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_a6d87c2a7753f6c7205a45a6bf31053ef}\label{class_enemy_ai_a6d87c2a7753f6c7205a45a6bf31053ef}} 
+bool {\bfseries player\+In\+Sight\+Range}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_abc8cee5cf596f6cc7813cc49c4b83c8a}\label{class_enemy_ai_abc8cee5cf596f6cc7813cc49c4b83c8a}} 
+bool {\bfseries player\+In\+Attack\+Range}
+\item 
+\mbox{\Hypertarget{class_enemy_ai_ad8f7fa485717a1a8d5a9c50b2aa8e3c4}\label{class_enemy_ai_ad8f7fa485717a1a8d5a9c50b2aa8e3c4}} 
+bool {\bfseries is\+Dead}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for controlling enemies. 
+
+Every specific \char`\"{}\+Ai\char`\"{} class inherits this one. Determines the actions taken by an enemy based of the distance to the player. Also controls basic functionality like taking damage, dying etc. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Unity/\+Projects/\+Untitled-\/game/\+Untitled FPS/\+Assets/\+Scripts/Enemy\+Ai.\+cs\end{DoxyCompactItemize}

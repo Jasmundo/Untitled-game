@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Controls animations and what happens when Demon Lord attacks the player.
+/// </summary>
 public class DemonLordAi : EnemyAi
 {
     //public GameObject projectile;

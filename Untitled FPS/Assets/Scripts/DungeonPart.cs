@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Controlls parts of dungeons ie. rooms and corridors.
+/// </summary>
 public class DungeonPart : MonoBehaviour
 {
     public GameObject thisPart;
@@ -60,18 +63,12 @@ public class DungeonPart : MonoBehaviour
         NavMeshSurface = thisPart.GetComponent<NavMeshSurface>();
         CollisionDetect = thisPart.GetComponent<CollisionDetect>();
     }
-
+    /// <summary>
+    /// Calls a function spawning a new rooms/corridor in every unused opening.
+    /// </summary>
+    /// <returns> the generated parts so they can be put into a List in the Dungeon class</returns>
 	public DungeonPart[] Generate()
     {
-        /*
-        GameObject entryPointsObject = thisPart.transform.Find("EntryPoints").gameObject;
-        Transform[] entryPointsPositions = entryPointsObject.GetComponentsInChildren<Transform>();
-        entryPoints = new EntryPoint[entryPointsPositions.Length - 1];
-        for (int i = 1; i < entryPointsPositions.Length; ++i)
-        {
-            entryPoints[i - 1] = new EntryPoint(dungeon, entryPointsPositions[i]);
-        }
-        */
         int noOfUnusedOpenings = NoOfUnusedOpenings();
         DungeonPart[] generatedParts = new DungeonPart[noOfUnusedOpenings];
         int n = 0;
@@ -83,14 +80,13 @@ public class DungeonPart : MonoBehaviour
                 generatedParts[n] = generatedPart;
                 ++n;
             }
-            /*if(generatedPart != null)
-            {
-                generatedParts[i] = generatedPart;
-            }*/
         }
         return generatedParts;
     }
-
+    /// <summary>
+    /// Calls a function spawning an armory connected to an unused opening.
+    /// </summary>
+    /// <returns>the generated part so it can be put into a List in the Dungeon class</returns>
     public DungeonPart SpawnArmory() 
     {
         DungeonPart[] spawnedArmory = new DungeonPart[1];
@@ -105,7 +101,10 @@ public class DungeonPart : MonoBehaviour
         }
         return spawnedArmory[0];
     }
-
+    /// <summary>
+    /// Calls a function spawning a boss room connected to an unused opening.
+    /// </summary>
+    /// <returns>the generated part so it can be put into a List in the Dungeon class</returns>
     public DungeonPart SpawnBossRoom()
     {
         DungeonPart[] spawnedBossRoom = new DungeonPart[1];
@@ -160,7 +159,6 @@ public class DungeonPart : MonoBehaviour
                         spawnPoints[i].SpawnMob();
                     }
                 }
-                
             }
         }
     }

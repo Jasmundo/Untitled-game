@@ -1,0 +1,166 @@
+\hypertarget{class_dungeon}{}\doxysection{Dungeon Class Reference}
+\label{class_dungeon}\index{Dungeon@{Dungeon}}
+
+
+Class used for generating a single dungeon floor.  
+
+
+Inheritance diagram for Dungeon\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dungeon}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dungeon_a14bfadaff66ceb3b5d0bb2f65cb03415}{Finalize\+Dungeon}} ()
+\begin{DoxyCompactList}\small\item\em Used to finalized a dungeon. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_entry_point}{Entry\+Point}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_dungeon_ad1978d76418c80e18b826a7180af9ba1}{Get\+Entry\+Points}} (Game\+Object this\+Part)
+\begin{DoxyCompactList}\small\item\em Used to create new \mbox{\hyperlink{class_entry_point}{Entry\+Point}} objects for a room or corridor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_spawn_point}{Spawn\+Point}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_dungeon_a049f1a9f1a98765b6e17829b82393eec}{Get\+Spawn\+Points}} (Game\+Object this\+Part)
+\begin{DoxyCompactList}\small\item\em Used to create new \mbox{\hyperlink{class_spawn_point}{Spawn\+Point}} objects for a room or corridor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_health_spawn_point}{Health\+Spawn\+Point}} \mbox{\hyperlink{class_dungeon_a2060ea6dce66bebc054241874180ebb5}{Get\+Health\+Spawn\+Point}} (Game\+Object this\+Part)
+\begin{DoxyCompactList}\small\item\em Used to create new \mbox{\hyperlink{class_health_spawn_point}{Health\+Spawn\+Point}} objects for a room or corridor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dungeon_a8a3b98cb0622e3bca1ca1cdc1bc065f7}\label{class_dungeon_a8a3b98cb0622e3bca1ca1cdc1bc065f7}} 
+bool {\bfseries Is\+Dungeon\+Finished} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dungeon_a8a3d0384cddaa8ce1157297643d2d318}\label{class_dungeon_a8a3d0384cddaa8ce1157297643d2d318}} 
+List$<$ Game\+Object $>$ {\bfseries rooms}
+\item 
+\mbox{\Hypertarget{class_dungeon_af8384ca4346cd84fe27d4349201f1ec4}\label{class_dungeon_af8384ca4346cd84fe27d4349201f1ec4}} 
+List$<$ Game\+Object $>$ {\bfseries starting\+Rooms}
+\item 
+\mbox{\Hypertarget{class_dungeon_affd26152d1208247b88a76c3e214bc15}\label{class_dungeon_affd26152d1208247b88a76c3e214bc15}} 
+List$<$ Game\+Object $>$ {\bfseries corridors}
+\item 
+\mbox{\Hypertarget{class_dungeon_a7b41f8643bef3c7795f810fa7adb7a92}\label{class_dungeon_a7b41f8643bef3c7795f810fa7adb7a92}} 
+List$<$ Game\+Object $>$ {\bfseries mobs}
+\item 
+\mbox{\Hypertarget{class_dungeon_a93b2fff8ad09f810349d29afde81e48b}\label{class_dungeon_a93b2fff8ad09f810349d29afde81e48b}} 
+List$<$ int $>$ {\bfseries gun\+Types}
+\item 
+\mbox{\Hypertarget{class_dungeon_a4086a5c5b8945d8de0e57e6bd6a662d1}\label{class_dungeon_a4086a5c5b8945d8de0e57e6bd6a662d1}} 
+Game\+Object {\bfseries armory}
+\item 
+\mbox{\Hypertarget{class_dungeon_ac2c8b9f9908aaf54e3c9e15c9a63f758}\label{class_dungeon_ac2c8b9f9908aaf54e3c9e15c9a63f758}} 
+Game\+Object {\bfseries boss\+Room}
+\item 
+\mbox{\Hypertarget{class_dungeon_ab5c9fdd949e0c1150590f8e7f7c2762c}\label{class_dungeon_ab5c9fdd949e0c1150590f8e7f7c2762c}} 
+Game\+Object {\bfseries door}
+\item 
+\mbox{\Hypertarget{class_dungeon_ad64c3ff4d4620c251844f56af1e04574}\label{class_dungeon_ad64c3ff4d4620c251844f56af1e04574}} 
+Game\+Object {\bfseries exit\+Door}
+\item 
+\mbox{\Hypertarget{class_dungeon_aa4fcf07e2ec75f4f2c1c65b8c8a6a722}\label{class_dungeon_aa4fcf07e2ec75f4f2c1c65b8c8a6a722}} 
+Game\+Object {\bfseries wall}
+\item 
+\mbox{\Hypertarget{class_dungeon_ac85418f345aebb795f645f8e35705053}\label{class_dungeon_ac85418f345aebb795f645f8e35705053}} 
+Game\+Object {\bfseries healthpack}
+\item 
+\mbox{\Hypertarget{class_dungeon_af14f44f1318a86b25f2178b5937bfbcb}\label{class_dungeon_af14f44f1318a86b25f2178b5937bfbcb}} 
+float {\bfseries floor\+Score}
+\item 
+\mbox{\Hypertarget{class_dungeon_a3f56834d28be7338774da67f4a297277}\label{class_dungeon_a3f56834d28be7338774da67f4a297277}} 
+int {\bfseries goal\+Number\+Of\+Rooms}
+\item 
+\mbox{\Hypertarget{class_dungeon_aa957b9e97bf4e664723b9bb5eb38ebb8}\label{class_dungeon_aa957b9e97bf4e664723b9bb5eb38ebb8}} 
+int {\bfseries floor\+Number}
+\item 
+\mbox{\Hypertarget{class_dungeon_a7cdc57e1ff2407d1aa8d2f0a7942f4c0}\label{class_dungeon_a7cdc57e1ff2407d1aa8d2f0a7942f4c0}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries mob\+Bias}
+\item 
+\mbox{\Hypertarget{class_dungeon_abb1f689089034215d57cfbbcf6df1f94}\label{class_dungeon_abb1f689089034215d57cfbbcf6df1f94}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries gun\+Type\+Bias}
+\item 
+\mbox{\Hypertarget{class_dungeon_a05a5f0da4fbcea065646bff2c434ded3}\label{class_dungeon_a05a5f0da4fbcea065646bff2c434ded3}} 
+int\mbox{[}$\,$\mbox{]} {\bfseries gun\+Rarity\+Bias}
+\item 
+\mbox{\Hypertarget{class_dungeon_ad6f581ff365e00d503af742007cd74cc}\label{class_dungeon_ad6f581ff365e00d503af742007cd74cc}} 
+Layer\+Mask {\bfseries layer\+Mask}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class used for generating a single dungeon floor. 
+
+Generation is done in stages in the update method.\+The reason is to make the On\+Trigger\+Enter() function work properly After a single floor is generated it is rated and given a score based on certain desirable aspects Only the best dungeon gets finalized by the \mbox{\hyperlink{class_dungeon_a14bfadaff66ceb3b5d0bb2f65cb03415}{Finalize\+Dungeon()}} function. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dungeon_a14bfadaff66ceb3b5d0bb2f65cb03415}\label{class_dungeon_a14bfadaff66ceb3b5d0bb2f65cb03415}} 
+\index{Dungeon@{Dungeon}!FinalizeDungeon@{FinalizeDungeon}}
+\index{FinalizeDungeon@{FinalizeDungeon}!Dungeon@{Dungeon}}
+\doxysubsubsection{\texorpdfstring{FinalizeDungeon()}{FinalizeDungeon()}}
+{\footnotesize\ttfamily void Dungeon.\+Finalize\+Dungeon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Used to finalized a dungeon. 
+
+Spawns elements such as\+:~\newline
+-\/decorative elements~\newline
+-\/doors and walls~\newline
+-\/mobs~\newline
+-\/health packs~\newline
+Additonally it builds the Nav\+Meshes and turns off the collison detection scripts. \mbox{\Hypertarget{class_dungeon_ad1978d76418c80e18b826a7180af9ba1}\label{class_dungeon_ad1978d76418c80e18b826a7180af9ba1}} 
+\index{Dungeon@{Dungeon}!GetEntryPoints@{GetEntryPoints}}
+\index{GetEntryPoints@{GetEntryPoints}!Dungeon@{Dungeon}}
+\doxysubsubsection{\texorpdfstring{GetEntryPoints()}{GetEntryPoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_entry_point}{Entry\+Point}}\mbox{[}$\,$\mbox{]} Dungeon.\+Get\+Entry\+Points (\begin{DoxyParamCaption}\item[{Game\+Object}]{this\+Part }\end{DoxyParamCaption})}
+
+
+
+Used to create new \mbox{\hyperlink{class_entry_point}{Entry\+Point}} objects for a room or corridor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em this\+Part} & -\/a newly spawned room or corridor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of created \mbox{\hyperlink{class_entry_point}{Entry\+Point}} objects
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dungeon_a2060ea6dce66bebc054241874180ebb5}\label{class_dungeon_a2060ea6dce66bebc054241874180ebb5}} 
+\index{Dungeon@{Dungeon}!GetHealthSpawnPoint@{GetHealthSpawnPoint}}
+\index{GetHealthSpawnPoint@{GetHealthSpawnPoint}!Dungeon@{Dungeon}}
+\doxysubsubsection{\texorpdfstring{GetHealthSpawnPoint()}{GetHealthSpawnPoint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_health_spawn_point}{Health\+Spawn\+Point}} Dungeon.\+Get\+Health\+Spawn\+Point (\begin{DoxyParamCaption}\item[{Game\+Object}]{this\+Part }\end{DoxyParamCaption})}
+
+
+
+Used to create new \mbox{\hyperlink{class_health_spawn_point}{Health\+Spawn\+Point}} objects for a room or corridor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em this\+Part} & -\/a newly spawned room or corridor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of created \mbox{\hyperlink{class_health_spawn_point}{Health\+Spawn\+Point}} objects
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dungeon_a049f1a9f1a98765b6e17829b82393eec}\label{class_dungeon_a049f1a9f1a98765b6e17829b82393eec}} 
+\index{Dungeon@{Dungeon}!GetSpawnPoints@{GetSpawnPoints}}
+\index{GetSpawnPoints@{GetSpawnPoints}!Dungeon@{Dungeon}}
+\doxysubsubsection{\texorpdfstring{GetSpawnPoints()}{GetSpawnPoints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_spawn_point}{Spawn\+Point}}\mbox{[}$\,$\mbox{]} Dungeon.\+Get\+Spawn\+Points (\begin{DoxyParamCaption}\item[{Game\+Object}]{this\+Part }\end{DoxyParamCaption})}
+
+
+
+Used to create new \mbox{\hyperlink{class_spawn_point}{Spawn\+Point}} objects for a room or corridor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em this\+Part} & -\/a newly spawned room or corridor\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A list of created \mbox{\hyperlink{class_spawn_point}{Spawn\+Point}} objects
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Unity/\+Projects/\+Untitled-\/game/\+Untitled FPS/\+Assets/\+Scripts/Dungeon.\+cs\end{DoxyCompactItemize}

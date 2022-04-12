@@ -1,0 +1,80 @@
+\hypertarget{class_dungeon_controller}{}\doxysection{Dungeon\+Controller Class Reference}
+\label{class_dungeon_controller}\index{DungeonController@{DungeonController}}
+
+
+Used to control the process of spawning dungeon floors.  
+
+
+Inheritance diagram for Dungeon\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dungeon_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_dungeon_controller_ad71e7aecbd0780984654ac9dff2836a8}{Load\+Next\+Floor}} ()
+\begin{DoxyCompactList}\small\item\em Self explanatory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_a76ff79e2b6c3a057bf7af34943d03b9b}\label{class_dungeon_controller_a76ff79e2b6c3a057bf7af34943d03b9b}} 
+List$<$ Game\+Object $>$ {\bfseries dungeon\+Floors}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_a115389bcc530a504ae35d7dec20a0f33}\label{class_dungeon_controller_a115389bcc530a504ae35d7dec20a0f33}} 
+List$<$ Game\+Object $>$ {\bfseries initial\+Dungeon\+Floors}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_ad3acbef44d96dd9c479cbab91f4d1f92}\label{class_dungeon_controller_ad3acbef44d96dd9c479cbab91f4d1f92}} 
+List$<$ Game\+Object $>$\mbox{[}$\,$\mbox{]} {\bfseries decorative\+Elements} = new List$<$Game\+Object$>$\mbox{[}5\mbox{]}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_ac008f91d3538a96be28a9fa9945e2176}\label{class_dungeon_controller_ac008f91d3538a96be28a9fa9945e2176}} 
+List$<$ Game\+Object $>$ {\bfseries decor0}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_a244bb1f659db350813a9435f05450415}\label{class_dungeon_controller_a244bb1f659db350813a9435f05450415}} 
+List$<$ Game\+Object $>$ {\bfseries decor1}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_a46902169731b9282b1740f5490af9b32}\label{class_dungeon_controller_a46902169731b9282b1740f5490af9b32}} 
+List$<$ Game\+Object $>$ {\bfseries decor2}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_a7bb89e45f835fec743a0b832cc3f199b}\label{class_dungeon_controller_a7bb89e45f835fec743a0b832cc3f199b}} 
+List$<$ Game\+Object $>$ {\bfseries decor3}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_ac5e9275a6318017c9ef4eb52a6246fcb}\label{class_dungeon_controller_ac5e9275a6318017c9ef4eb52a6246fcb}} 
+List$<$ Game\+Object $>$ {\bfseries decor4}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_ae90863c924325c4d51d569cea4f56255}\label{class_dungeon_controller_ae90863c924325c4d51d569cea4f56255}} 
+Game\+Object {\bfseries current\+Dungeon\+Floor}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_a49b3037997fff820decd3fc7aea9fc56}\label{class_dungeon_controller_a49b3037997fff820decd3fc7aea9fc56}} 
+Game\+Object {\bfseries loading\+Screen}
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_aa16d17d1bfca1daf4d55ef470fba0dc7}\label{class_dungeon_controller_aa16d17d1bfca1daf4d55ef470fba0dc7}} 
+int {\bfseries current\+Floor\+Nr} = 0
+\item 
+\mbox{\Hypertarget{class_dungeon_controller_a9faf3690895489ee9b65db0c88b011bf}\label{class_dungeon_controller_a9faf3690895489ee9b65db0c88b011bf}} 
+Vector3\mbox{[}$\,$\mbox{]} {\bfseries floor\+Locations}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Used to control the process of spawning dungeon floors. 
+
+Immediately after starting the game or getting to the next floor 9 versions of the dungeon get spawned. Only the \char`\"{}best\char`\"{} one stays. Logic behind determining scores and finalizing dungeons happens in the Update() function because the algorythm spawning a single dungeon version also exists within an Update() function. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dungeon_controller_ad71e7aecbd0780984654ac9dff2836a8}\label{class_dungeon_controller_ad71e7aecbd0780984654ac9dff2836a8}} 
+\index{DungeonController@{DungeonController}!LoadNextFloor@{LoadNextFloor}}
+\index{LoadNextFloor@{LoadNextFloor}!DungeonController@{DungeonController}}
+\doxysubsubsection{\texorpdfstring{LoadNextFloor()}{LoadNextFloor()}}
+{\footnotesize\ttfamily void Dungeon\+Controller.\+Load\+Next\+Floor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Self explanatory. 
+
+Deletes existing dungeon, increments floor number and spawns new dungeons. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Unity/\+Projects/\+Untitled-\/game/\+Untitled FPS/\+Assets/\+Scripts/Dungeon\+Controller.\+cs\end{DoxyCompactItemize}

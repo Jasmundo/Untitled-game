@@ -1,0 +1,79 @@
+\hypertarget{class_gunfire_controller}{}\doxysection{Gunfire\+Controller Class Reference}
+\label{class_gunfire_controller}\index{GunfireController@{GunfireController}}
+Inheritance diagram for Gunfire\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gunfire_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_gunfire_controller_a7abb2ffa1856e2c40c641588f90d2d2b}{Fire\+Weapon}} (int damage, float reload\+Time)
+\begin{DoxyCompactList}\small\item\em Creates an instance of the muzzle flash. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_a3516c25a0e71fd68f4eb722b16f69789}\label{class_gunfire_controller_a3516c25a0e71fd68f4eb722b16f69789}} 
+Audio\+Clip {\bfseries Gun\+Shot\+Clip}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_a4426efb8fa3e7efc1c0507a746f199fa}\label{class_gunfire_controller_a4426efb8fa3e7efc1c0507a746f199fa}} 
+Audio\+Clip {\bfseries Reload\+Clip}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_a58c4b7ffebe2268d5d4d24ed2709a1dd}\label{class_gunfire_controller_a58c4b7ffebe2268d5d4d24ed2709a1dd}} 
+Audio\+Source {\bfseries source}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_ae30a3e38ce559290ca3544f5d6ec1dd9}\label{class_gunfire_controller_ae30a3e38ce559290ca3544f5d6ec1dd9}} 
+Audio\+Source {\bfseries reload\+Source}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_afe95c867db7f841f84b77980ae2304c2}\label{class_gunfire_controller_afe95c867db7f841f84b77980ae2304c2}} 
+Vector2 {\bfseries audio\+Pitch} = new Vector2(.\+9f, 1.\+1f)
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_aa0353963324bf677cad7013abe4b3a67}\label{class_gunfire_controller_aa0353963324bf677cad7013abe4b3a67}} 
+Game\+Object {\bfseries muzzle\+Prefab}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_aea2295dae61f8b643f928e52625d9529}\label{class_gunfire_controller_aea2295dae61f8b643f928e52625d9529}} 
+Game\+Object {\bfseries muzzle\+Position}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_a810c48956c70488236a4751a10be6686}\label{class_gunfire_controller_a810c48956c70488236a4751a10be6686}} 
+bool {\bfseries auto\+Fire}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_ae228658b402201613e7e25ce91f45836}\label{class_gunfire_controller_ae228658b402201613e7e25ce91f45836}} 
+float {\bfseries shot\+Delay} = .\+5f
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_af6388ca3202c3193d1da91675e4a8bc3}\label{class_gunfire_controller_af6388ca3202c3193d1da91675e4a8bc3}} 
+bool {\bfseries rotate} = true
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_af112ba0373d6c62cfddbb49f178df4f6}\label{class_gunfire_controller_af112ba0373d6c62cfddbb49f178df4f6}} 
+float {\bfseries rotation\+Speed} = .\+25f
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_a936e6f82e2ae2d73c19185404fd87101}\label{class_gunfire_controller_a936e6f82e2ae2d73c19185404fd87101}} 
+Game\+Object {\bfseries scope}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_ac2df47a5575a63cea6afb6e12a091921}\label{class_gunfire_controller_ac2df47a5575a63cea6afb6e12a091921}} 
+bool {\bfseries scope\+Active} = true
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_a5f7759e36393a17a9fbef9e8e3c2ae45}\label{class_gunfire_controller_a5f7759e36393a17a9fbef9e8e3c2ae45}} 
+Game\+Object {\bfseries projectile\+Prefab}
+\item 
+\mbox{\Hypertarget{class_gunfire_controller_a0715b36e80e4b795852f0fb881a49a6c}\label{class_gunfire_controller_a0715b36e80e4b795852f0fb881a49a6c}} 
+Game\+Object {\bfseries projectile\+To\+Disable\+On\+Fire}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_gunfire_controller_a7abb2ffa1856e2c40c641588f90d2d2b}\label{class_gunfire_controller_a7abb2ffa1856e2c40c641588f90d2d2b}} 
+\index{GunfireController@{GunfireController}!FireWeapon@{FireWeapon}}
+\index{FireWeapon@{FireWeapon}!GunfireController@{GunfireController}}
+\doxysubsubsection{\texorpdfstring{FireWeapon()}{FireWeapon()}}
+{\footnotesize\ttfamily void Gunfire\+Controller.\+Fire\+Weapon (\begin{DoxyParamCaption}\item[{int}]{damage,  }\item[{float}]{reload\+Time }\end{DoxyParamCaption})}
+
+
+
+Creates an instance of the muzzle flash. 
+
+Also creates an instance of the audio\+Source so that multiple shots are not overlapped on the same audio source. Insert projectile code in this function. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Unity/\+Projects/\+Untitled-\/game/\+Untitled FPS/\+Assets/\+Scripts/Gunfire\+Controller.\+cs\end{DoxyCompactItemize}

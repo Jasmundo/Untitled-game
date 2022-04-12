@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Used to control the process of spawning dungeon floors.
+/// Immediately after starting the game or getting to the next floor 9 versions of the dungeon get spawned. Only the "best" one stays.
+/// Logic behind determining scores and finalizing dungeons happens in the Update() function because the algorythm spawning a single dungeon version also exists within an Update() function.
+/// </summary>
 public class DungeonController : MonoBehaviour
 {
     public List<GameObject> dungeonFloors;
@@ -52,6 +57,9 @@ public class DungeonController : MonoBehaviour
             }
         }
 	}
+    /// <summary>
+    /// Self explanatory. Deletes existing dungeon, increments floor number and spawns new dungeons.
+    /// </summary>
 	public void LoadNextFloor()
     {
         Destroy(currentDungeonFloor);

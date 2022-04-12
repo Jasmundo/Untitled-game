@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Component of transforms existing in rooms that designate a location of a health pack.
+/// </summary>
 public class HealthSpawnPoint : MonoBehaviour
 {
 	private Dungeon dungeon;

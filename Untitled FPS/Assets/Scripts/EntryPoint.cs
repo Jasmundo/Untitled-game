@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Runtime;
 
+/// <summary>
+/// Responsible for spawning elements at different transforms existing in dungeon parts.
+/// Those elements can be: adjacent rooms/corridors, doors, walls.
+/// </summary>
 public class EntryPoint : MonoBehaviour
 {
     private Dungeon dungeon;
@@ -17,7 +21,13 @@ public class EntryPoint : MonoBehaviour
 		this.dungeon = dungeon;
 		this.entryPoint = entryPoint;
 	}
-
+	/// <summary>
+	/// Used to create new parts of the dungeon. Spawnes a prefab of a new room/corridor at the location stored in the entryPoint variable. Then uses it to create an EntryPoint type obejct.
+	/// </summary>
+	/// <param name="parent"> - the DungeonPart object that the newly spawned part is connected to</param>
+	/// <param name="parentEntryPoint"> - which of the parent's EntryPoint variables is the newly spawned part connected to</param>
+	/// <param name="partType"> - what type of DungeonPart is the parent object- room or corridor. If the parent part is a room the spawned part is going to be a corridor and vice versa</param>
+	/// <returns>The newly spawned DungeonPart object</returns>
 	public DungeonPart SpawnPart(DungeonPart parent, int parentEntryPoint, int partType)
 	{
 		GameObject spawnedPartObject = GetRandomPart(partType);

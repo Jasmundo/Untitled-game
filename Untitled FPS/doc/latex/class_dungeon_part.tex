@@ -1,0 +1,146 @@
+\hypertarget{class_dungeon_part}{}\doxysection{Dungeon\+Part Class Reference}
+\label{class_dungeon_part}\index{DungeonPart@{DungeonPart}}
+
+
+Controlls parts of dungeons ie.  
+
+
+Inheritance diagram for Dungeon\+Part\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dungeon_part}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_afe997b33408b0db412085ea84e606214}\label{class_dungeon_part_afe997b33408b0db412085ea84e606214}} 
+{\bfseries Dungeon\+Part} (Game\+Object this\+Part, \mbox{\hyperlink{class_dungeon}{Dungeon}} dungeon, int part\+Type, \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} parent, int parent\+Entry\+Point)
+\item 
+\mbox{\Hypertarget{class_dungeon_part_a21529c7e1941810e7529b6ee0aa8c3aa}\label{class_dungeon_part_a21529c7e1941810e7529b6ee0aa8c3aa}} 
+{\bfseries Dungeon\+Part} (Game\+Object this\+Part, \mbox{\hyperlink{class_dungeon}{Dungeon}} dungeon, \mbox{\hyperlink{class_entry_point}{Entry\+Point}}\mbox{[}$\,$\mbox{]} entry\+Points, int part\+Type)
+\item 
+\mbox{\Hypertarget{class_dungeon_part_a85f58cb67afb9f2d913a924128bc26e0}\label{class_dungeon_part_a85f58cb67afb9f2d913a924128bc26e0}} 
+{\bfseries Dungeon\+Part} (Game\+Object this\+Part, \mbox{\hyperlink{class_dungeon}{Dungeon}} dungeon, \mbox{\hyperlink{class_entry_point}{Entry\+Point}}\mbox{[}$\,$\mbox{]} entry\+Points, \mbox{\hyperlink{class_health_spawn_point}{Health\+Spawn\+Point}} health\+Spawn\+Point, int part\+Type, \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} parent, int parent\+Entry\+Point)
+\item 
+\mbox{\Hypertarget{class_dungeon_part_aba13c04a3a01a5e7ebba92aaea4d7189}\label{class_dungeon_part_aba13c04a3a01a5e7ebba92aaea4d7189}} 
+{\bfseries Dungeon\+Part} (Game\+Object this\+Part, \mbox{\hyperlink{class_dungeon}{Dungeon}} dungeon, \mbox{\hyperlink{class_entry_point}{Entry\+Point}}\mbox{[}$\,$\mbox{]} entry\+Points, \mbox{\hyperlink{class_spawn_point}{Spawn\+Point}}\mbox{[}$\,$\mbox{]} spawn\+Points, int part\+Type, \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} parent, int parent\+Entry\+Point)
+\item 
+\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}}\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_dungeon_part_aa3df157c082a390a55be7626b43c4f4d}{Generate}} ()
+\begin{DoxyCompactList}\small\item\em Calls a function spawning a new rooms/corridor in every unused opening. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} \mbox{\hyperlink{class_dungeon_part_a7ef5d65f1b02e462657f68eb6a7a7d25}{Spawn\+Armory}} ()
+\begin{DoxyCompactList}\small\item\em Calls a function spawning an armory connected to an unused opening. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} \mbox{\hyperlink{class_dungeon_part_a1652bb67be6fbcf03afa4a09fbbe0159}{Spawn\+Boss\+Room}} ()
+\begin{DoxyCompactList}\small\item\em Calls a function spawning a boss room connected to an unused opening. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_dungeon_part_a0faaf67c8019fe69d2d7b255cc0e4393}\label{class_dungeon_part_a0faaf67c8019fe69d2d7b255cc0e4393}} 
+void {\bfseries Spawn\+Doors} ()
+\item 
+\mbox{\Hypertarget{class_dungeon_part_ac83cb6f4bc33b05a4edc23b3a500022c}\label{class_dungeon_part_ac83cb6f4bc33b05a4edc23b3a500022c}} 
+void {\bfseries Spawn\+Exit\+Door} ()
+\item 
+\mbox{\Hypertarget{class_dungeon_part_aa383bb4334cacc46cc4c287ea2f831b0}\label{class_dungeon_part_aa383bb4334cacc46cc4c287ea2f831b0}} 
+void {\bfseries Spawn\+Walls} ()
+\item 
+\mbox{\Hypertarget{class_dungeon_part_aff01221cd07f6d72a26af14b1bbe1a72}\label{class_dungeon_part_aff01221cd07f6d72a26af14b1bbe1a72}} 
+void {\bfseries Spawn\+Mobs} ()
+\item 
+\mbox{\Hypertarget{class_dungeon_part_ae9093ea98efbd3457304ffcb7fe7cf17}\label{class_dungeon_part_ae9093ea98efbd3457304ffcb7fe7cf17}} 
+void {\bfseries Spawn\+Health} ()
+\item 
+\mbox{\Hypertarget{class_dungeon_part_a13a81e6ed010cd87d5720ee8a55335e7}\label{class_dungeon_part_a13a81e6ed010cd87d5720ee8a55335e7}} 
+int {\bfseries No\+Of\+Unused\+Openings} ()
+\item 
+\mbox{\Hypertarget{class_dungeon_part_a946e710f9ea1f2907cd4255e1c452765}\label{class_dungeon_part_a946e710f9ea1f2907cd4255e1c452765}} 
+int {\bfseries No\+Of\+All\+Openings} ()
+\item 
+\mbox{\Hypertarget{class_dungeon_part_ac7a9483d2c5182cce5f0c9e2b2e94ec5}\label{class_dungeon_part_ac7a9483d2c5182cce5f0c9e2b2e94ec5}} 
+bool {\bfseries Check\+For\+Collison} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_abbd081f64270df6c5de24159bf7f777a}\label{class_dungeon_part_abbd081f64270df6c5de24159bf7f777a}} 
+Game\+Object {\bfseries this\+Part}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_a8c9bf55632f266791bc4f65560bce0d8}\label{class_dungeon_part_a8c9bf55632f266791bc4f65560bce0d8}} 
+\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} {\bfseries parent}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_aab2c4494cca2ef7a1c724ecb45fc2519}\label{class_dungeon_part_aab2c4494cca2ef7a1c724ecb45fc2519}} 
+int {\bfseries parent\+Entry\+Point}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_a26dff73d32ee43f57dcc71aeff3006c3}\label{class_dungeon_part_a26dff73d32ee43f57dcc71aeff3006c3}} 
+\mbox{\hyperlink{class_entry_point}{Entry\+Point}}\mbox{[}$\,$\mbox{]} {\bfseries entry\+Points}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_ac8ac6e685e0854ddadda5e1ae85bce23}\label{class_dungeon_part_ac8ac6e685e0854ddadda5e1ae85bce23}} 
+\mbox{\hyperlink{class_spawn_point}{Spawn\+Point}}\mbox{[}$\,$\mbox{]} {\bfseries spawn\+Points}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_a25cc82941716879609368c8e5c8a0487}\label{class_dungeon_part_a25cc82941716879609368c8e5c8a0487}} 
+\mbox{\hyperlink{class_health_spawn_point}{Health\+Spawn\+Point}} {\bfseries health\+Spawn\+Point}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_a074055a34356997d9ed887c2c064cadc}\label{class_dungeon_part_a074055a34356997d9ed887c2c064cadc}} 
+int {\bfseries part\+Type}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_ad14aceb5fca6e2637260fa85d885a580}\label{class_dungeon_part_ad14aceb5fca6e2637260fa85d885a580}} 
+Nav\+Mesh\+Surface {\bfseries Nav\+Mesh\+Surface}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_a79a9be357a11afc111b6eccd12dd7158}\label{class_dungeon_part_a79a9be357a11afc111b6eccd12dd7158}} 
+\mbox{\hyperlink{class_collision_detect}{Collision\+Detect}} {\bfseries Collision\+Detect}
+\item 
+\mbox{\Hypertarget{class_dungeon_part_adf18ff4a450ccd0f072df091683e0d1c}\label{class_dungeon_part_adf18ff4a450ccd0f072df091683e0d1c}} 
+bool {\bfseries is\+Colliding} = false
+\item 
+\mbox{\Hypertarget{class_dungeon_part_abdf532ad4aeac3686abec45da5b6174b}\label{class_dungeon_part_abdf532ad4aeac3686abec45da5b6174b}} 
+bool {\bfseries validated} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlls parts of dungeons ie. 
+
+rooms and corridors. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dungeon_part_aa3df157c082a390a55be7626b43c4f4d}\label{class_dungeon_part_aa3df157c082a390a55be7626b43c4f4d}} 
+\index{DungeonPart@{DungeonPart}!Generate@{Generate}}
+\index{Generate@{Generate}!DungeonPart@{DungeonPart}}
+\doxysubsubsection{\texorpdfstring{Generate()}{Generate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}}\mbox{[}$\,$\mbox{]} Dungeon\+Part.\+Generate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls a function spawning a new rooms/corridor in every unused opening. 
+
+\begin{DoxyReturn}{Returns}
+the generated parts so they can be put into a List in the \mbox{\hyperlink{class_dungeon}{Dungeon}} class
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dungeon_part_a7ef5d65f1b02e462657f68eb6a7a7d25}\label{class_dungeon_part_a7ef5d65f1b02e462657f68eb6a7a7d25}} 
+\index{DungeonPart@{DungeonPart}!SpawnArmory@{SpawnArmory}}
+\index{SpawnArmory@{SpawnArmory}!DungeonPart@{DungeonPart}}
+\doxysubsubsection{\texorpdfstring{SpawnArmory()}{SpawnArmory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} Dungeon\+Part.\+Spawn\+Armory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls a function spawning an armory connected to an unused opening. 
+
+\begin{DoxyReturn}{Returns}
+the generated part so it can be put into a List in the \mbox{\hyperlink{class_dungeon}{Dungeon}} class
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_dungeon_part_a1652bb67be6fbcf03afa4a09fbbe0159}\label{class_dungeon_part_a1652bb67be6fbcf03afa4a09fbbe0159}} 
+\index{DungeonPart@{DungeonPart}!SpawnBossRoom@{SpawnBossRoom}}
+\index{SpawnBossRoom@{SpawnBossRoom}!DungeonPart@{DungeonPart}}
+\doxysubsubsection{\texorpdfstring{SpawnBossRoom()}{SpawnBossRoom()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} Dungeon\+Part.\+Spawn\+Boss\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls a function spawning a boss room connected to an unused opening. 
+
+\begin{DoxyReturn}{Returns}
+the generated part so it can be put into a List in the \mbox{\hyperlink{class_dungeon}{Dungeon}} class
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Unity/\+Projects/\+Untitled-\/game/\+Untitled FPS/\+Assets/\+Scripts/Dungeon\+Part.\+cs\end{DoxyCompactItemize}

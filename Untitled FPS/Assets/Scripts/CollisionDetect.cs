@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Used to detect collisions on newly spawned objects. Every dungeon part has this script as a component.
+/// </summary>
 public class CollisionDetect : MonoBehaviour
 {
     public bool isColliding = false;

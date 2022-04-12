@@ -5,6 +5,12 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Class used for generating a single dungeon floor.
+/// Generation is done in stages in the update method.The reason is to make the OnTriggerEnter() function work properly
+/// After a single floor is generated it is rated and given a score based on certain desirable aspects
+/// Only the best dungeon gets finalized by the FinalizeDungeon() function.
+/// </summary>
 public class Dungeon : MonoBehaviour
 {
     public List<GameObject> rooms;
@@ -36,6 +42,7 @@ public class Dungeon : MonoBehaviour
     string overallScorePath = @"c:\Users\Jasmundo\Documents\scores\overallScore.txt";
     string winnerScorePath = @"c:\Users\Jasmundo\Documents\scores\winnerScore.txt";
 
+    // Spawns the starting room and adjacent corridors.
     void Start()
     {
         surfaces = GetComponents<NavMeshSurface>();
@@ -340,6 +347,14 @@ public class Dungeon : MonoBehaviour
             sw.WriteLine(value);
         }
     }
+    /// Used to finalized a dungeon.
+    /// 
+    /// Spawns elements such as:\n
+    /// -decorative elements\n
+    /// -doors and walls\n
+    /// -mobs\n
+    /// -health packs\n
+    /// Additonally it builds the NavMeshes and turns off the collison detection scripts.
     public void FinalizeDungeon()
     {
         int goalHealthpackNo = Mathf.CeilToInt(currentDungeonParts.Count / 10);
@@ -430,6 +445,11 @@ public class Dungeon : MonoBehaviour
             if (currentDungeonParts[partNo].NoOfUnusedOpenings() > 0) return partNo; ;
         } 
     }
+    /// <summary>
+    /// Used to create new EntryPoint objects for a room or corridor.
+    /// </summary>
+    /// <param name="thisPart"> -a newly spawned room or corridor</param>
+    /// <returns>A list of created EntryPoint objects</returns>
     public EntryPoint[] GetEntryPoints(GameObject thisPart)
     {
         GameObject entryPointsObject = thisPart.transform.Find("EntryPoints").gameObject;
@@ -441,6 +461,11 @@ public class Dungeon : MonoBehaviour
         }
         return entryPoints;
     }
+    /// <summary>
+    /// Used to create new SpawnPoint objects for a room or corridor.
+    /// </summary>
+    /// <param name="thisPart"> -a newly spawned room or corridor</param>
+    /// <returns>A list of created SpawnPoint objects</returns>
     public SpawnPoint[] GetSpawnPoints(GameObject thisPart)
     {
         GameObject spawnPointsObject = thisPart.transform.Find("SpawnPoints").gameObject;
@@ -452,6 +477,11 @@ public class Dungeon : MonoBehaviour
         }
         return spawnPoints;
     }
+    /// <summary>
+    /// Used to create new HealthSpawnPoint objects for a room or corridor.
+    /// </summary>
+    /// <param name="thisPart"> -a newly spawned room or corridor</param>
+    /// <returns>A list of created HealthSpawnPoint objects</returns>
     public HealthSpawnPoint GetHealthSpawnPoint(GameObject thisPart)
     {
         GameObject spawnPointObject = thisPart.transform.Find("HealthSpawnPoint").gameObject;

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Controls a projectile used by some enemies.
+/// </summary>
 public class MagicOrb : MonoBehaviour
 {
     public int damage;

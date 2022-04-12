@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Controlls the behaviour of a health pack.
+/// </summary>
 public class HealthPack : MonoBehaviour
 {
     void Start()

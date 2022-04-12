@@ -1,0 +1,85 @@
+\hypertarget{class_entry_point}{}\doxysection{Entry\+Point Class Reference}
+\label{class_entry_point}\index{EntryPoint@{EntryPoint}}
+
+
+Responsible for spawning elements at different transforms existing in dungeon parts.  
+
+
+Inheritance diagram for Entry\+Point\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_entry_point}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entry_point_a299e9cfc71271e6fbda2da188a4d12ee}\label{class_entry_point_a299e9cfc71271e6fbda2da188a4d12ee}} 
+{\bfseries Entry\+Point} (\mbox{\hyperlink{class_dungeon}{Dungeon}} dungeon, Transform entry\+Point)
+\item 
+\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} \mbox{\hyperlink{class_entry_point_ab6240d370b06ba4e343507252eea02a8}{Spawn\+Part}} (\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} parent, int parent\+Entry\+Point, int part\+Type)
+\begin{DoxyCompactList}\small\item\em Used to create new parts of the dungeon. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_entry_point_a595caacc165d768af8db675cb8dfb9d0}\label{class_entry_point_a595caacc165d768af8db675cb8dfb9d0}} 
+\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} {\bfseries Spawn\+Armory} (\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} parent, int parent\+Entry\+Point)
+\item 
+\mbox{\Hypertarget{class_entry_point_ad645cbf88081a5b4844aa5bf6110921a}\label{class_entry_point_ad645cbf88081a5b4844aa5bf6110921a}} 
+\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} {\bfseries Spawn\+Boss\+Room} (\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} parent, int parent\+Entry\+Point)
+\item 
+\mbox{\Hypertarget{class_entry_point_a155b2da222ed4045f8ac7a1f43e52e2d}\label{class_entry_point_a155b2da222ed4045f8ac7a1f43e52e2d}} 
+void {\bfseries Spawn\+Door} ()
+\item 
+\mbox{\Hypertarget{class_entry_point_a80202e517b03ed058941e5d0566b2385}\label{class_entry_point_a80202e517b03ed058941e5d0566b2385}} 
+bool {\bfseries Spawn\+Exit\+Door} ()
+\item 
+\mbox{\Hypertarget{class_entry_point_a7f13d58db1e3e5f091e5538f845620c3}\label{class_entry_point_a7f13d58db1e3e5f091e5538f845620c3}} 
+void {\bfseries Spawn\+Wall} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_entry_point_acbbc7a05648611663104abe076accca1}\label{class_entry_point_acbbc7a05648611663104abe076accca1}} 
+bool {\bfseries opening\+Active} = false
+\item 
+\mbox{\Hypertarget{class_entry_point_affa435077632bd4f58a1b3698a6be294}\label{class_entry_point_affa435077632bd4f58a1b3698a6be294}} 
+bool {\bfseries opening\+Validated} = false
+\item 
+\mbox{\Hypertarget{class_entry_point_a795387b1768e965d37940347c5695911}\label{class_entry_point_a795387b1768e965d37940347c5695911}} 
+Game\+Object {\bfseries spawned\+Part}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Responsible for spawning elements at different transforms existing in dungeon parts. 
+
+Those elements can be\+: adjacent rooms/corridors, doors, walls. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_entry_point_ab6240d370b06ba4e343507252eea02a8}\label{class_entry_point_ab6240d370b06ba4e343507252eea02a8}} 
+\index{EntryPoint@{EntryPoint}!SpawnPart@{SpawnPart}}
+\index{SpawnPart@{SpawnPart}!EntryPoint@{EntryPoint}}
+\doxysubsubsection{\texorpdfstring{SpawnPart()}{SpawnPart()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} Entry\+Point.\+Spawn\+Part (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}}}]{parent,  }\item[{int}]{parent\+Entry\+Point,  }\item[{int}]{part\+Type }\end{DoxyParamCaption})}
+
+
+
+Used to create new parts of the dungeon. 
+
+Spawnes a prefab of a new room/corridor at the location stored in the entry\+Point variable. Then uses it to create an \mbox{\hyperlink{class_entry_point}{Entry\+Point}} type obejct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & -\/ the \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} object that the newly spawned part is connected to\\
+\hline
+{\em parent\+Entry\+Point} & -\/ which of the parent\textquotesingle{}s \mbox{\hyperlink{class_entry_point}{Entry\+Point}} variables is the newly spawned part connected to\\
+\hline
+{\em part\+Type} & -\/ what type of \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} is the parent object-\/ room or corridor. If the parent part is a room the spawned part is going to be a corridor and vice versa\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The newly spawned \mbox{\hyperlink{class_dungeon_part}{Dungeon\+Part}} object
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Unity/\+Projects/\+Untitled-\/game/\+Untitled FPS/\+Assets/\+Scripts/Entry\+Point.\+cs\end{DoxyCompactItemize}

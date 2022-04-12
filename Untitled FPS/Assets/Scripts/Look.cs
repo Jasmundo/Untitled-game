@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Translates mouse movement to in-game camera movement.
+/// </summary>
 public class Look : MonoBehaviour
 {
 	#region Variables

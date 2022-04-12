@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Opens and closes a door depending on the player's distance from it. Also controlls animations and audio.
+/// </summary>
 public class DoorController : MonoBehaviour
 {
     public GameObject player, door1, door2;
@@ -17,7 +20,6 @@ public class DoorController : MonoBehaviour
         audio = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Vector3.Distance(player.transform.position, transform.position) <= distance)

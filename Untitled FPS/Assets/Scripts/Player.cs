@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Main class handling the funtionality of the player-controlled character.
+/// </summary>
 public class Player : MonoBehaviour
 {
 	#region Variables

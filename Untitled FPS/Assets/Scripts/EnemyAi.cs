@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Base class for controlling enemies. Every specific "Ai" class inherits this one.
+/// Determines the actions taken by an enemy based of the distance to the player.
+/// Also controls basic functionality like taking damage, dying etc.
+/// </summary>
 public class EnemyAi : MonoBehaviour
 {
     public NavMeshAgent agent;
@@ -133,6 +138,7 @@ public class EnemyAi : MonoBehaviour
             health = maxHealth;
         }
     }
+
     private void Die()
     {
         Rigidbody[] rigidbodies = GetComponentsInChildren<Rigidbody>();
